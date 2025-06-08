@@ -1,0 +1,38 @@
+.
+├── bot
+│   ├── __init__.py
+│   ├── assets
+│   │   ├── fonts
+│   │   └── images
+│   ├── autorole_reactionroles.db
+│   ├── bot
+│   │   └── data
+│   ├── config.py
+│   ├── data
+│   │   ├── leveling.db
+│   │   ├── levels.db
+│   │   └── settings.db
+│   ├── database
+│   ├── extensions
+│   │   ├── autorole.py
+│   │   ├── fun.py
+│   │   ├── leveling.py
+│   │   ├── logging.py
+│   │   ├── minecraft.py
+│   │   ├── moderation.py
+│   │   ├── permissions.py
+│   │   ├── reactionroles.py
+│   │   ├── role_manager.py
+│   │   ├── say.py
+│   │   ├── utility.py
+│   │   └── welcome.py
+│   ├── main.py
+│   └── utils
+│       ├──  __init__.py
+│       ├── bot
+│       ├── checks.py
+│       ├── database.py
+│       └── test_db.py
+└── project-structure.txt
+
+12 directories, 24 files
