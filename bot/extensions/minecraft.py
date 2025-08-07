@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 from urllib.parse import urlparse
 import aiohttp
+import re
 
 class Minecraft(commands.Cog):
     def __init__(self, bot):
@@ -12,17 +13,14 @@ class Minecraft(commands.Cog):
         self.bedrock_ip = "amzcraft.xyz:25568"
         self.server_version = "1.21+"
 
-        # Vote Links
-        self.vote_links = [
-            "https://topminecraftservers.org/server/40251",
-            "https://minecraft-server-list.com/server/512358",
-            "https://topg.org/minecraft-servers/server-671146",
-            "https://planetminecraft.com/server/amzcraft/vote",
-            "https://minecraft-server.net/details/AmzCraft",
-            "https://minecraft-mp.com/server/341570/vote",
-            "https://best-minecraft-servers.co/server-amzcraft.27860/vote",
-            "https://minecraft.buzz/vote/13832",
-            "https://serveur-minecraft.com/4555"
+        # Vote Sites from your config, with names and URLs cleaned
+        self.vote_sites = [
+            {"name": "TopG", "url": "https://topg.org/minecraft-servers/server-671146"},
+            {"name": "Minecraft-Server.net", "url": "https://minecraft-server.net/details/AmzCraft/"},
+            {"name": "Minecraft-MP.com", "url": "https://minecraft-mp.com/server/341570/vote"},
+            {"name": "Best-Minecraft-Servers", "url": "https://best-minecraft-servers.co/server-amzcraft.27860/vote"},
+            {"name": "MinecraftBuzz", "url": "https://minecraft.buzz/vote/13832"},
+            {"name": "TopMinecraftServers", "url": "https://topminecraftservers.org/server/40251"},
         ]
 
     @commands.command(name="ip")
@@ -46,9 +44,10 @@ class Minecraft(commands.Cog):
             description="Support the server by voting daily on these sites:",
             color=discord.Color.gold()
         )
-        for url in self.vote_links:
-            domain = urlparse(url).netloc.replace("www.", "")
-            embed.add_field(name=domain, value=f"[Click here]({url})", inline=False)
+        for site in self.vote_sites:
+            # Clean URL text for display: remove any color codes or formatting if needed
+            clean_name = re.sub(r'&.', '', site["name"])  # just in case
+            embed.add_field(name=clean_name, value=f"[Click here]({site['url']})", inline=False)
         embed.set_footer(text="Thanks for your support!")
         await ctx.send(embed=embed)
 
