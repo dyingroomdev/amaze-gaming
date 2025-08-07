@@ -41,7 +41,8 @@ async def main():
             "bot.extensions.utility",
             "bot.extensions.minecraft",
             "bot.extensions.fun",
-            "bot.extensions.logging"
+            "bot.extensions.logging",
+            "bot.extensions.dm_welcome"
             # Add others if needed
         ]
 
