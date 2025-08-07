@@ -1,12 +1,124 @@
 .
+├── LICENSE
 ├── bot
 │   ├── __init__.py
 │   ├── assets
 │   │   ├── fonts
+│   │   │   ├── Roboto-Black.ttf
+│   │   │   ├── Roboto-Black.ttf:Zone.Identifier
+│   │   │   ├── Roboto-BlackItalic.ttf
+│   │   │   ├── Roboto-BlackItalic.ttf:Zone.Identifier
+│   │   │   ├── Roboto-Bold.ttf
+│   │   │   ├── Roboto-Bold.ttf:Zone.Identifier
+│   │   │   ├── Roboto-BoldItalic.ttf
+│   │   │   ├── Roboto-BoldItalic.ttf:Zone.Identifier
+│   │   │   ├── Roboto-ExtraBold.ttf
+│   │   │   ├── Roboto-ExtraBold.ttf:Zone.Identifier
+│   │   │   ├── Roboto-ExtraBoldItalic.ttf
+│   │   │   ├── Roboto-ExtraBoldItalic.ttf:Zone.Identifier
+│   │   │   ├── Roboto-ExtraLight.ttf
+│   │   │   ├── Roboto-ExtraLight.ttf:Zone.Identifier
+│   │   │   ├── Roboto-ExtraLightItalic.ttf
+│   │   │   ├── Roboto-ExtraLightItalic.ttf:Zone.Identifier
+│   │   │   ├── Roboto-Italic.ttf
+│   │   │   ├── Roboto-Italic.ttf:Zone.Identifier
+│   │   │   ├── Roboto-Light.ttf
+│   │   │   ├── Roboto-Light.ttf:Zone.Identifier
+│   │   │   ├── Roboto-LightItalic.ttf
+│   │   │   ├── Roboto-LightItalic.ttf:Zone.Identifier
+│   │   │   ├── Roboto-Medium.ttf
+│   │   │   ├── Roboto-Medium.ttf:Zone.Identifier
+│   │   │   ├── Roboto-MediumItalic.ttf
+│   │   │   ├── Roboto-MediumItalic.ttf:Zone.Identifier
+│   │   │   ├── Roboto-Regular.ttf
+│   │   │   ├── Roboto-Regular.ttf:Zone.Identifier
+│   │   │   ├── Roboto-SemiBold.ttf
+│   │   │   ├── Roboto-SemiBold.ttf:Zone.Identifier
+│   │   │   ├── Roboto-SemiBoldItalic.ttf
+│   │   │   ├── Roboto-SemiBoldItalic.ttf:Zone.Identifier
+│   │   │   ├── Roboto-Thin.ttf
+│   │   │   ├── Roboto-Thin.ttf:Zone.Identifier
+│   │   │   ├── Roboto-ThinItalic.ttf
+│   │   │   ├── Roboto-ThinItalic.ttf:Zone.Identifier
+│   │   │   ├── Roboto_Condensed-Black.ttf
+│   │   │   ├── Roboto_Condensed-Black.ttf:Zone.Identifier
+│   │   │   ├── Roboto_Condensed-BlackItalic.ttf
+│   │   │   ├── Roboto_Condensed-BlackItalic.ttf:Zone.Identifier
+│   │   │   ├── Roboto_Condensed-Bold.ttf
+│   │   │   ├── Roboto_Condensed-Bold.ttf:Zone.Identifier
+│   │   │   ├── Roboto_Condensed-BoldItalic.ttf
+│   │   │   ├── Roboto_Condensed-BoldItalic.ttf:Zone.Identifier
+│   │   │   ├── Roboto_Condensed-ExtraBold.ttf
+│   │   │   ├── Roboto_Condensed-ExtraBold.ttf:Zone.Identifier
+│   │   │   ├── Roboto_Condensed-ExtraBoldItalic.ttf
+│   │   │   ├── Roboto_Condensed-ExtraBoldItalic.ttf:Zone.Identifier
+│   │   │   ├── Roboto_Condensed-ExtraLight.ttf
+│   │   │   ├── Roboto_Condensed-ExtraLight.ttf:Zone.Identifier
+│   │   │   ├── Roboto_Condensed-ExtraLightItalic.ttf
+│   │   │   ├── Roboto_Condensed-ExtraLightItalic.ttf:Zone.Identifier
+│   │   │   ├── Roboto_Condensed-Italic.ttf
+│   │   │   ├── Roboto_Condensed-Italic.ttf:Zone.Identifier
+│   │   │   ├── Roboto_Condensed-Light.ttf
+│   │   │   ├── Roboto_Condensed-Light.ttf:Zone.Identifier
+│   │   │   ├── Roboto_Condensed-LightItalic.ttf
+│   │   │   ├── Roboto_Condensed-LightItalic.ttf:Zone.Identifier
+│   │   │   ├── Roboto_Condensed-Medium.ttf
+│   │   │   ├── Roboto_Condensed-Medium.ttf:Zone.Identifier
+│   │   │   ├── Roboto_Condensed-MediumItalic.ttf
+│   │   │   ├── Roboto_Condensed-MediumItalic.ttf:Zone.Identifier
+│   │   │   ├── Roboto_Condensed-Regular.ttf
+│   │   │   ├── Roboto_Condensed-Regular.ttf:Zone.Identifier
+│   │   │   ├── Roboto_Condensed-SemiBold.ttf
+│   │   │   ├── Roboto_Condensed-SemiBold.ttf:Zone.Identifier
+│   │   │   ├── Roboto_Condensed-SemiBoldItalic.ttf
+│   │   │   ├── Roboto_Condensed-SemiBoldItalic.ttf:Zone.Identifier
+│   │   │   ├── Roboto_Condensed-Thin.ttf
+│   │   │   ├── Roboto_Condensed-Thin.ttf:Zone.Identifier
+│   │   │   ├── Roboto_Condensed-ThinItalic.ttf
+│   │   │   ├── Roboto_Condensed-ThinItalic.ttf:Zone.Identifier
+│   │   │   ├── Roboto_SemiCondensed-Black.ttf
+│   │   │   ├── Roboto_SemiCondensed-Black.ttf:Zone.Identifier
+│   │   │   ├── Roboto_SemiCondensed-BlackItalic.ttf
+│   │   │   ├── Roboto_SemiCondensed-BlackItalic.ttf:Zone.Identifier
+│   │   │   ├── Roboto_SemiCondensed-Bold.ttf
+│   │   │   ├── Roboto_SemiCondensed-Bold.ttf:Zone.Identifier
+│   │   │   ├── Roboto_SemiCondensed-BoldItalic.ttf
+│   │   │   ├── Roboto_SemiCondensed-BoldItalic.ttf:Zone.Identifier
+│   │   │   ├── Roboto_SemiCondensed-ExtraBold.ttf
+│   │   │   ├── Roboto_SemiCondensed-ExtraBold.ttf:Zone.Identifier
+│   │   │   ├── Roboto_SemiCondensed-ExtraBoldItalic.ttf
+│   │   │   ├── Roboto_SemiCondensed-ExtraBoldItalic.ttf:Zone.Identifier
+│   │   │   ├── Roboto_SemiCondensed-ExtraLight.ttf
+│   │   │   ├── Roboto_SemiCondensed-ExtraLight.ttf:Zone.Identifier
+│   │   │   ├── Roboto_SemiCondensed-ExtraLightItalic.ttf
+│   │   │   ├── Roboto_SemiCondensed-ExtraLightItalic.ttf:Zone.Identifier
+│   │   │   ├── Roboto_SemiCondensed-Italic.ttf
+│   │   │   ├── Roboto_SemiCondensed-Italic.ttf:Zone.Identifier
+│   │   │   ├── Roboto_SemiCondensed-Light.ttf
+│   │   │   ├── Roboto_SemiCondensed-Light.ttf:Zone.Identifier
+│   │   │   ├── Roboto_SemiCondensed-LightItalic.ttf
+│   │   │   ├── Roboto_SemiCondensed-LightItalic.ttf:Zone.Identifier
+│   │   │   ├── Roboto_SemiCondensed-Medium.ttf
+│   │   │   ├── Roboto_SemiCondensed-Medium.ttf:Zone.Identifier
+│   │   │   ├── Roboto_SemiCondensed-MediumItalic.ttf
+│   │   │   ├── Roboto_SemiCondensed-MediumItalic.ttf:Zone.Identifier
+│   │   │   ├── Roboto_SemiCondensed-Regular.ttf
+│   │   │   ├── Roboto_SemiCondensed-Regular.ttf:Zone.Identifier
+│   │   │   ├── Roboto_SemiCondensed-SemiBold.ttf
+│   │   │   ├── Roboto_SemiCondensed-SemiBold.ttf:Zone.Identifier
+│   │   │   ├── Roboto_SemiCondensed-SemiBoldItalic.ttf
+│   │   │   ├── Roboto_SemiCondensed-SemiBoldItalic.ttf:Zone.Identifier
+│   │   │   ├── Roboto_SemiCondensed-Thin.ttf
+│   │   │   ├── Roboto_SemiCondensed-Thin.ttf:Zone.Identifier
+│   │   │   ├── Roboto_SemiCondensed-ThinItalic.ttf
+│   │   │   └── Roboto_SemiCondensed-ThinItalic.ttf:Zone.Identifier
 │   │   └── images
+│   │       └── server_logo.png
 │   ├── autorole_reactionroles.db
 │   ├── bot
 │   │   └── data
+│   │       ├── amaze_gaming.db
+│   │       └── leveling.db
 │   ├── config.py
 │   ├── data
 │   │   ├── leveling.db
@@ -14,12 +126,16 @@
 │   │   └── settings.db
 │   ├── database
 │   ├── extensions
+│   │   ├── To
+│   │   ├── auto_moderation.py
 │   │   ├── autorole.py
+│   │   ├── dm_welcome.py
 │   │   ├── fun.py
 │   │   ├── leveling.py
 │   │   ├── logging.py
 │   │   ├── minecraft.py
 │   │   ├── moderation.py
+│   │   ├── music.py
 │   │   ├── permissions.py
 │   │   ├── reactionroles.py
 │   │   ├── role_manager.py
@@ -30,9 +146,9 @@
 │   └── utils
 │       ├──  __init__.py
 │       ├── bot
+│       │   └── data
+│       │       └── amaze_gaming.db
 │       ├── checks.py
 │       ├── database.py
 │       └── test_db.py
 └── project-structure.txt
-
-12 directories, 24 files
